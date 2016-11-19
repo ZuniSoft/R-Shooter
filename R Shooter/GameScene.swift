@@ -74,11 +74,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         gameTimer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(addAlien), userInfo: nil, repeats: true)
         
-        motionManager.accelerometerUpdateInterval = 0.2
+        motionManager.accelerometerUpdateInterval = 0.1
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) { (data: CMAccelerometerData?, error: Error?) in
             if let accelerometerData = data {
                 let acceleration = accelerometerData.acceleration
-                self.xAcceleration = CGFloat(acceleration.x) * 0.75 + self.xAcceleration * 0.25
+                self.xAcceleration = CGFloat(acceleration.x) * 0.7 + self.xAcceleration * 0.3
             }
         }
         
@@ -182,10 +182,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 self.livesArray.removeFirst()
                 
                 if self.livesArray.count == 0 {
+                    self.motionManager.stopAccelerometerUpdates()
+                    
                     let transition = SKTransition.flipHorizontal(withDuration: 0.5)
                     let menuScene = SKScene(fileNamed: "MenuScene") as! MenuScene
                     menuScene.scaleMode = .aspectFill
                     menuScene.score = self.score
+                    
                     self.view?.presentScene(menuScene, transition: transition)
                 }
             }
