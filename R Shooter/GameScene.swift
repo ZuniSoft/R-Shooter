@@ -81,6 +81,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 self.xAcceleration = CGFloat(acceleration.x) * 0.75 + self.xAcceleration * 0.25
             }
         }
+        
+        self.view?.showsFPS = false
+        self.view?.showsNodeCount = false
     }
     
     override func didSimulatePhysics() {

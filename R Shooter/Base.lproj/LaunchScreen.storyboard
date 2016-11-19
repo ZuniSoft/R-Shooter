@@ -25,18 +25,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Images: Copyright © 2016 Irem, Inc." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCe-KC-kNh">
                                 <rect key="frame" x="82" y="980" width="605" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Code: Copyright © 2016 Keith R. Davis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJb-en-bDy">
                                 <rect key="frame" x="257" y="1001" width="255" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchimage" translatesAutoresizingMaskIntoConstraints="NO" id="BIX-Nb-JQ1">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="972"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9b-CK-jHE">
                                 <rect key="frame" x="130" y="381" width="508" height="210"/>
                                 <constraints>
@@ -57,20 +54,14 @@
                                 <size key="shadowOffset" width="3" height="3"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="N9b-CK-jHE" firstAttribute="centerX" secondItem="BIX-Nb-JQ1" secondAttribute="centerX" id="77p-Vv-4X3"/>
                             <constraint firstItem="sCe-KC-kNh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="62" id="9Ub-dj-IhP"/>
                             <constraint firstItem="N9b-CK-jHE" firstAttribute="centerX" secondItem="sCe-KC-kNh" secondAttribute="centerX" id="SkJ-hJ-3gC"/>
                             <constraint firstItem="mJb-en-bDy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SnA-XP-pAP"/>
                             <constraint firstItem="N9b-CK-jHE" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="361" id="UUz-2e-GcG"/>
                             <constraint firstItem="sCe-KC-kNh" firstAttribute="centerX" secondItem="mJb-en-bDy" secondAttribute="centerX" id="XZb-N3-Dlu"/>
-                            <constraint firstItem="sCe-KC-kNh" firstAttribute="top" secondItem="BIX-Nb-JQ1" secondAttribute="bottom" constant="8" id="bPq-pq-pv8"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="mJb-en-bDy" secondAttribute="bottom" constant="8" symbolic="YES" id="ddw-3u-lSq"/>
-                            <constraint firstItem="N9b-CK-jHE" firstAttribute="centerY" secondItem="BIX-Nb-JQ1" secondAttribute="centerY" id="exw-r6-opn"/>
-                            <constraint firstItem="BIX-Nb-JQ1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="oju-Gj-5Lx"/>
-                            <constraint firstAttribute="trailing" secondItem="BIX-Nb-JQ1" secondAttribute="trailing" id="pf2-Lu-HZS"/>
-                            <constraint firstItem="BIX-Nb-JQ1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vYB-w1-tAp"/>
                             <constraint firstItem="mJb-en-bDy" firstAttribute="top" secondItem="sCe-KC-kNh" secondAttribute="bottom" constant="6" id="zjc-DK-AU5"/>
                         </constraints>
                     </view>
@@ -80,7 +71,4 @@
             <point key="canvasLocation" x="30.46875" y="379.6875"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="launchimage" width="768" height="1024"/>
-    </resources>
 </document>
