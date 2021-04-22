@@ -17,13 +17,13 @@ class MenuScene: SKScene {
     var score: Int = 0
     
     override func didMove(to view: SKView) {
-        starfield = self.childNode(withName: "starfield") as! SKEmitterNode
+        starfield = self.childNode(withName: "starfield") as? SKEmitterNode
         starfield.advanceSimulationTime(10)
         
-        newGameButtonNode = self.childNode(withName: "newGameButton") as! SKSpriteNode
-        difficultyButtonNode = self.childNode(withName: "difficultyButton") as! SKSpriteNode
-        difficultyLabelNode = self.childNode(withName: "difficultyLabel") as! SKLabelNode
-        scoreLabelNode = self.childNode(withName: "scoreLabel") as! SKLabelNode
+        newGameButtonNode = self.childNode(withName: "newGameButton") as? SKSpriteNode
+        difficultyButtonNode = self.childNode(withName: "difficultyButton") as? SKSpriteNode
+        difficultyLabelNode = self.childNode(withName: "difficultyLabel") as? SKLabelNode
+        scoreLabelNode = self.childNode(withName: "scoreLabel") as? SKLabelNode
         
         let userDefaults = UserDefaults.standard
         

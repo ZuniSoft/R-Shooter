@@ -140,7 +140,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    func addAlien() {
+    @objc func addAlien() {
         var possibleAliens = [String]()
         
         if score >= 0 && score < 300 {
